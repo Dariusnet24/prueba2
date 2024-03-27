@@ -10,9 +10,9 @@ const port = process.env.PORT || 3001;
 app.use(express.json()); 
 app.use(cors());
 
-app.use(`/api/Users`, userRouter);
-app.use(`/api/Products`, productsRouter);
-app.use(`/api/Auth`, authRouter);
+app.use(`/api/users`, userRouter);
+app.use(`/api/products`, productsRouter);
+app.use(`/api/auth`, authRouter);
 
 app.listen(port, () => {
     console.log(`SERVIDOR ARRIBA EN PUERTO ${port}`);
